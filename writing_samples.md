@@ -87,9 +87,7 @@ There are two easy ways to remediate the problem of the policy including unsafe,
 
 These two solutions produce the same result, and each is described below.
 
-
-
-However, one additional issue raised by the permissions above deserves further consideration: the possibility of secrets included in CloudFormation templates. Rather than removing the `CloudFormation:GetTemplate` permission from the permissions granted to the auditor (as this permission may be required for legitimate audit-related purposes), it is advisable that customers audit their CloudFormation templates for secrets, and sanitize and rotate any secrets discovered to have been previously exposed in templates. However, this must be done *before* granting permissions to the auditor, and removing or denying the permission is a possible temporary stop-gap measure until the remediation of the underlying problem is complete.
+One additional issue raised by the permissions above deserves further consideration: the possibility of secrets included in CloudFormation templates. Rather than removing the `CloudFormation:GetTemplate` permission from the permissions granted to the auditor (as this permission may be required for legitimate audit-related purposes), it is advisable that customers audit their CloudFormation templates for secrets, and sanitize and rotate any secrets discovered to have been previously exposed in templates. However, this must be done *before* granting permissions to the auditor, and removing or denying the permission is a possible temporary stop-gap measure until the remediation of the underlying problem is complete.
 
 As a matter of best practices, ensure that teams using CloudFormation *never* put secrets directly into templates. Instead, secrets should be are stored securely and under IAM-scoped encryption, for example in AWS Parameter Store using AWS Key Management Service (KMS) for encryption, and [interpolated at deploy-time as dynamic references](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/dynamic-references.html) in templates.
 
@@ -541,9 +539,9 @@ As a secrets storage administrator (a user, as created above, with the **Cloud K
 
 
 
-As a Google user, as created above, with Cloud KMS encryption/decryption privileges for the specific key, and read/write privileges on the particular Google Cloud Storage bucket, use the gcloud CLI to encrypt/decrypt files and push/pull them to/from the bucket :
+As a Google user (such as the one created above) with Cloud KMS encryption/decryption privileges for the specific key, and read/write privileges on the particular Google Cloud Storage bucket, use the gcloud CLI to encrypt and push files to the bucket, and pull files from the bucket and decrypt them.
 
-To encrypt a file, for example a YAML file containing a secrets manifest, called secrets.yml, run:
+To encrypt a file, for example a YAML file containing a secrets manifest named secrets.yml, run:
 ```bash
 gcloud kms encrypt --location KEYRING_LOCATION \
 --keyring KEYRING_NAME --key KEY_NAME \
