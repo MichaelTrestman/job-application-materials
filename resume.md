@@ -107,7 +107,7 @@ Technical writer, software engineer, consultant and technologist.
 ### Research Fellow in Philosophy of Science, Tanner Center for the Humanities, University of Utah | 2010-2011
 
 - Published papers in academic journals.
-- Gave talks at academic conferences.
+- Presented research at academic conferences.
 
 ### Graduate Instructor in Philosophy, University of California | 2006-2010
 
