@@ -95,19 +95,19 @@ Technical writer, software engineer, consultant and technologist.
 
 - Conducted independent and collaborative research in theoretical foundations of cognitive science.
 - Taught graduate-level seminars to interdisciplinary graduate students in the cognitive science program.
-- Published papers in profession journals.
-- Gave talks at professional conferences.
+- Published papers in academic journals.
+- Presented research at academic conferences.
 
 ### Visiting Assistant Professor, University of California, Davis | 2012
 
 - Taught courses in bio-medical ethics, philosophy of science and philosophy of mind.
-- Published papers in profession journals.
-- Gave talks at professional conferences.
+- Published papers in academic journals.
+- Presented research at academic conferences.
 
 ### Research Fellow in Philosophy of Science, Tanner Center for the Humanities, University of Utah | 2010-2011
 
-- Published papers in profession journals.
-- Gave talks at professional conferences.
+- Published papers in academic journals.
+- Gave talks at academic conferences.
 
 ### Graduate Instructor in Philosophy, University of California | 2006-2010
 
