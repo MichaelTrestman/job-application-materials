@@ -287,7 +287,7 @@ Create alert on your load balancer for server error responses:
 
 12. Under **Select an SNS topic**, check  **Create a new topic**.
 
-13. Enter a name approprate to the topic's function, such as "example-application-elb-5XXs-HIGH-URGENCY".
+13. Enter a name appropriate to the topic's function, such as "example-application-elb-5XXs-HIGH-URGENCY".
 
 14. Enter a comma-separated list of the email addresses of subscribers. This can include employees and notifications endpoint, for example email integration endpoints for incident response management services such as PagerDuty.
 
