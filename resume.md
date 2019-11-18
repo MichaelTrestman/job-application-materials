@@ -85,7 +85,7 @@ Technical writer, software engineer, consultant and technologist.
 
 - Collaborated with product owners and developers on determining operational best practices for different user scenarios.
 
-- Adapted documentation for user personas including platform operators, application developers, and non-technical business decision makers.
+- Adapted documentation for user personas including platform operators, application developers and non-technical business decision makers.
 
   Technologies: Markdown, Git, Cloud Foundry, Concourse CI
 
