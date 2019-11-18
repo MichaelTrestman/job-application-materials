@@ -18,7 +18,7 @@ Contents:
 
 ### Introduction
 
-Amazon offers a managed Identity and Access Management (IAM) policy, named [**SecurityAudit**](https://console.aws.amazon.com/iam/home?#/policies/arn:aws:iam::aws:policy/SecurityAudit$actionLevelSummary?service=EC2&effect=Allow&section=permissions), designed to grant a security auditor privileges sufficient to perform security auditing funcitons. However, granting infrastructure access privileges should always be carefully considered, especially when the user would be someone outside of the organization or company. As an organization performing audits, is it appropriate to ask for these permissions? Does granting the privileges contained in the SecurityAudit policy expose a client organization to increased risk of leaking their customers' personally identifiable information (PII), or otherwise endanger their compute environment or information assets in the case of irresponsible or malicious use of the permissions by the granted user, i.e. the security auditor?
+Amazon offers a managed Identity and Access Management (IAM) policy, named [**SecurityAudit**](https://console.aws.amazon.com/iam/home?#/policies/arn:aws:iam::aws:policy/SecurityAudit$actionLevelSummary?service=EC2&effect=Allow&section=permissions), designed to grant a security auditor privileges sufficient to perform security auditing functions. However, granting infrastructure access privileges should always be carefully considered, especially when the user would be someone outside of the organization or company. As an organization performing audits, is it appropriate to ask for these permissions? Does granting the privileges contained in the SecurityAudit policy expose a client organization to increased risk of leaking their customers' personally identifiable information (PII), or otherwise endanger their compute environment or information assets in the case of irresponsible or malicious use of the permissions by the granted user, i.e. the security auditor?
 
 The set of permissions included in this policy is generally designed to allow a privileged user to access configuration metadata without reading any system or application data, or accessing any credentials that could later be used to access sensitive data or resources. However, several of the permissions granted in the policy do allow a user to view application data in specific scenarios, which might include PII for the customer’s users. For this reason, it is advisable to customize the permissions granted to auditors to a more restricted set. This procedure is documented below, following discussions of the permissions contained in the policy that are considered problematic.
 
@@ -273,7 +273,7 @@ Create alert on your load balancer for server error responses:
 
 7. Click **Create Alarm**.
 
-8. In the **Alarm Created Successfully** modal which opens up, click the name of your alarm to navigate to it's details page in the CloudWatch console. 
+8. In the **Alarm Created Successfully** modal which opens up, click the name of your alarm to navigate to its details page in the CloudWatch console. 
 
 9. Click **Edit.**
 
