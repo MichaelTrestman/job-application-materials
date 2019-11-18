@@ -8,7 +8,7 @@ Technical writer, software engineer, consultant and technologist.
 
 ## Work Experience:
 
-### Contract Technical Writer, Researcher and Cloud Security Best Practices Consultant, Vanta | June 2019 – Nov 2019 |
+### Contract Technical Writer, Researcher and Cloud Security Best Practices Consultant, Vanta | June 2019 – Nov 2019
 
 - Researched and consulted on security and reliability best practices for cloud-based software development, deployment and operations using Google Cloud Platform (GCP), Amazon Web Services (AWS) and Heroku.
 
@@ -16,21 +16,21 @@ Technical writer, software engineer, consultant and technologist.
 
   Technologies: GCP, AWS, Heroku, virtual machine and container cloud computing and security, networking and network security, cloud database and storage monitoring and security, operational security and best practices.
 
-### Independent Game Developer | September 2018 – June 2019 |
+### Independent Game Developer | September 2018 – June 2019
 
 - Worked on personal game development project: Multiverse Chess, an original, patent-pending rules-variant of chess that allows for play on an unlimited set of possible boards. Allows users to design and challenge each other on novel boards.  
 
   Technologies: Ruby, Rails, Javascript, Unity, C#, MongoDB
 
-### Site Reliability Engineer, Domino Data Labs | June 2018 – September 2018 |
+### Site Reliability Engineer, Domino Data Labs | June 2018 – September 2018
 
 - Architected, implemented, deployed and operated cloud-based computing and network infrastructure for Domino systems.
 
-- Consulted on best practices for systems reliability monitoring and incident response
+- Consulted on best practices for systems reliability monitoring and incident response.
 
   Technologies: Amazon Web Services, Salt, Docker, Kubernetes, Python, Linux, Nginx, Datadog, Newrelic, Pagerduty, Git
 
-### Software Engineer, Pivotal Software | April 2015 – June 2018 |
+### Software Engineer, Pivotal Software | April 2015 – June 2018
 
 #### Cloud Operations team for Pivotal Web Services
 
@@ -42,13 +42,13 @@ Technical writer, software engineer, consultant and technologist.
 
 - Conducted Root Cause Analysis on production problems, often resulting in bug fixes or new features to Cloud Foundry core components.  
 
-- Evolved practices and develop tooling for rapid detection and/or prevention of platform abuse (e.g. spam generation, phishing site hosting, cryptocurrency mining).
+- Evolved practices and developed tooling for rapid detection and/or prevention of platform abuse (e.g. spam generation, phishing site hosting, cryptocurrency mining).
 
   Technologies: Amazon Web Services, BOSH, Cloud Foundry, Concourse CI, Ruby, 	Golang, Linux, Docker, Datadog, Newrelic, Pagerduty, Git
 
 #### Billing and Accounts Management (BAM!) team for Pivotal Web Services
 
-- Developed, tested, deployed and operated REST microservices for platform usage monitoring, billing, and admin/management functions for Pivotal Web Services. Wrote a lot of Ruby.
+- Developed, tested, deployed and operated REST microservices for platform usage monitoring, billing, and admin/management functions for Pivotal Web Services.
 
 - Served as team anchor, responsible for on-boarding new engineers, setting team development and operations practices, coordinating team engineering priorities with product and engineering leadership.
 
@@ -56,15 +56,15 @@ Technical writer, software engineer, consultant and technologist.
 
 - Practiced test-driven development (TDD) and pair programming.
 
-  Technologies: Ruby, Rails, Mysql, Javascript, Cloud Foundry, Concourse CI,  Datadog, 	Newrelic, Pagerduty, Amazon Web Services, Google Cloud, Docker, Git
+  Technologies: Ruby, Rails, Mysql, Javascript, Cloud Foundry, Concourse CI,  Datadog, Newrelic, Pagerduty, Amazon Web Services, Google Cloud, Docker, Git
 
 #### BOSH core development team
 
-- Developed features for BOSH, a cloud-agnostic open source system for release engineering, deployment and lifecycle management of distributed systems:
+- Developed features for components of BOSH, a cloud-agnostic open source system for release engineering, deployment and lifecycle management of distributed systems:
 
-  - Worked on the BOSH director, a complex Ruby machine that orchestrates 	cluster deployments and monitors VM state.  	
-  - Worked on the BOSH agent, a daemon written in GO that runs on every 	BOSH-deployed VM and allows the director to monitor, kill, stop, 	restart and SSH tunnel into deployed VMs.  	
-  - Worked on the v2 BOSH cli, written in GO.
+  - BOSH director, a complex Ruby machine that orchestrates cluster deployments and monitors VM state.  	
+  - BOSH agent, a daemon written in GO that runs on every BOSH-deployed VM and allows the director to monitor, kill, stop, restart and SSH tunnel into deployed VMs.  	
+  - The v2 BOSH CLI, written in GO.
 
 - On-boarded open-source software contributors through the Cloud Foundry ‘dojo’ program.
 
@@ -91,25 +91,25 @@ Technical writer, software engineer, consultant and technologist.
 
   
 
-### Postdoctoral Fellow, National Science Foundation |Jan 2013 - Dec 2014|  
+### Postdoctoral Fellow, National Science Foundation | Jan 2013 - Dec 2014
 
 - Conducted independent and collaborative research in theoretical foundations of cognitive science.
 - Taught graduate-level seminars to interdisciplinary graduate students in the cognitive science program.
 - Published papers in profession journals.
 - Gave talks at professional conferences.
 
-### Visiting Assistant Professor, University of California, Davis |2012| 
+### Visiting Assistant Professor, University of California, Davis | 2012
 
 - Taught courses in bio-medical ethics, philosophy of science and philosophy of mind.
 - Published papers in profession journals.
 - Gave talks at professional conferences.
 
-### Research Fellow in Philosophy of Science, Tanner Center for the Humanities, University of Utah |2010-2011|
+### Research Fellow in Philosophy of Science, Tanner Center for the Humanities, University of Utah | 2010-2011
 
 - Published papers in profession journals.
 - Gave talks at professional conferences.
 
-### Graduate Instructor in Philosophy, University of California |2006-2010|
+### Graduate Instructor in Philosophy, University of California | 2006-2010
 
 - Taught courses in philosophy of science, philosophy of mind, logic and bio-medical ethics.
 
