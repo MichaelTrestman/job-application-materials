@@ -59,7 +59,7 @@ The following permissions are considered problematic in the sense that the answe
 
 This action allows a user to download log files for RDS databases. Available log files can be listed with the also-allowed [DescribeDBLogFiles](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBLogFiles.html) action.
 
-Why is this dangerous? By default, RDS retains only error logs for Postgres and MySQL databases. However, query logs can be, and are often are, enabled by engineers, as these logs are useful for identifying slow queries and tuning database performance. If query logs are enabled, the raw database query is displayed in the log lines. Depending on application logic, database queries may contain PII for application end users, i.e. a client organization's customers. For example, if a client's website has users fill out a form with their name, address and social security number in order to access their records, the database log would contain a linelike this:
+Why is this dangerous? By default, RDS retains only error logs for Postgres and MySQL databases. However, query logs can be, and are often are, enabled by engineers, as these logs are useful for identifying slow queries and tuning database performance. If query logs are enabled, the raw database query is displayed in the log lines. Depending on application logic, database queries may contain PII for application end users, i.e. a client organization's customers. For example, if a client's website has users fill out a form with their name, address and social security number in order to access their records, the database log would contain a line like this:
 
 
     LOG:  execute … SELECT(*) FROM records WHERE (social_security_number LIKE YOUR_SOCIAL_SECURITY_NUMBER) AND (full_name LIKE YOUR_NAME) AND (personal_address LIKE YOUR_ADDRESS)
@@ -345,7 +345,7 @@ Use Stackdriver monitoring to send server error response alerts for your Google 
 
 
 
-Secrets such as credentials for databases, external services and APIs, RSA keys, and AWS IAM key pairs are essential for modern applications. However, they are potentially dangerous vulnerabilities for exploitation, as malicious actors who gain access to secrets can wreak havoc. Secrets should be stored securely, such that they are accessable only by service roles or users that need them for specific engineering functions. They should also be encrypted with keys that are only accessable for encryption or decryption by service roles and users that specifically need to encrypt or decrypt them.
+Secrets such as credentials for databases, external services and APIs, RSA keys, and AWS IAM key pairs are essential for modern applications. However, they are potentially dangerous vulnerabilities for exploitation, as malicious actors who gain access to secrets can wreak havoc. Secrets should be stored securely, such that they are accessible only by service roles or users that need them for specific engineering functions. They should also be encrypted with keys that are only accessible for encryption or decryption by service roles and users that specifically need to encrypt or decrypt them.
 
 
 
