@@ -1,10 +1,8 @@
 # Technical Writing Samples
 
-Michael Trestman, Technical Writer
+Michael Trestman
 
 michael.a.trestman@gmail.com
-
-
 
 
 
