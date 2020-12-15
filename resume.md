@@ -8,6 +8,14 @@ Technical writer, software engineer, consultant and technologist.
 
 ## Work Experience:
 
+
+### Principle Technical Writer, Forte | March 2020 - Present
+
+- Maintain API documentation for the Forte platform
+- Create use-case oriented tutorials, teaching developers how to use platform functionality to solve realistic problems
+- Write conceptual guides on topics related to cryptoeconomics and game design
+- Consult on and edit other high-impact, technical, Partner-facing written material
+
 ### Contract Technical Writer, Researcher and Cloud Security Best Practices Consultant, Vanta | June 2019 – Nov 2019
 
 - Researched and consulted on security and reliability best practices for cloud-based software development, deployment and operations using Google Cloud Platform (GCP), Amazon Web Services (AWS) and Heroku
