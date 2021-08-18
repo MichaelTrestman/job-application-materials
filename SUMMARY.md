@@ -1,6 +1,6 @@
 # Table of contents
 
 * [Resume](README.md)
-* [Michael Trestman, PhD](resume.md)
-* [writing\_samples](writing_samples.md)
+* [Technical Writing Samples](writing_samples.md)
+* [AWS-managed SecurityAudit IAM Policy risk assessment and remediation](aws-managed-securityaudit-iam-policy-risk-assessment-and-remediation.md)
 
