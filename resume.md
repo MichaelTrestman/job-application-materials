@@ -15,7 +15,7 @@ Technical writer, software engineer, consultant and technologist.
 * Wrote conceptual guides on topics related to cryptoeconomics and game design
 * Consulted on and edited a variety of high-impact, technical, Partner-facing written material
 
-### Contract Technical Writer, Researcher and Cloud Security Best Practices Consultant, Vanta \| June 2019 – Nov 2019
+### Technical Writer, Researcher and Cloud Security Best Practices Consultant, Vanta \| June 2019 – Nov 2019
 
 * Researched and consulted on security and reliability best practices for cloud-based software development, deployment and operations using Google Cloud Platform \(GCP\), Amazon Web Services \(AWS\) and Heroku
 * Wrote technical documentation for remediations of operational shortcomings for Vanta Customers using GCP, AWS and Heroku
