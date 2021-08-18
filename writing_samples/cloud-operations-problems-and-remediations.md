@@ -1,4 +1,4 @@
-# Cloud Operations Problems and Remediations
+# Some Common Cloud Operations Issues and Remediations
 
 The below two writing samples are instructions on how to fix common shortcomings for small organizations with cloud-based compute infrastructure. Each problem has remediation instructions for both Amazon Web Service \(AWS\) and Google Cloud Platform \(GCP\).
 
