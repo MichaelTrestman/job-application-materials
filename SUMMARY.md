@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Resume](README.md)
+* [Michael Trestman, PhD](README.md)
 * [Technical Writing Samples](writing_samples/README.md)
   * [Forte Platform API Documentation](writing_samples/forte-platform-api-documentation.md)
   * [Kubes for Noobs: An Introduction to Kubernetes](writing_samples/kubes-for-noobs-an-introduction-to-kubernetes.md)

@@ -2,7 +2,7 @@
 description: 'Technical writer, software engineer, consultant and technologist.'
 ---
 
-# Resume
+# Michael Trestman, PhD
 
 [michael.a.trestman@gmail.com](mailto:michael.a.trestman@gmail.com)
 
