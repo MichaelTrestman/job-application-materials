@@ -4,7 +4,7 @@ Technical writer, software engineer, consultant and technologist.
 
 [michael.a.trestman@gmail.com](mailto:michael.a.trestman@gmail.com)
 
-## Work Experience:
+## Work Experience
 
 ### Principle Technical Writer and Docs Product Owner, Forte \| March 2020 - Present
 
@@ -22,11 +22,9 @@ Technical writer, software engineer, consultant and technologist.
 
   Technologies: GCP, AWS, Heroku, virtual machine and container cloud computing and security, networking and network security, cloud database and storage monitoring and security, operational security and best practices
 
-### Independent Game Developer \| September 2018 – June 2019
+### Freelance Consultant, Reliability and Security Engineer and Technical Writer \| September 2018 - March 2020
 
-* Worked on personal game development project: Multiverse Chess, an original, patent-pending rules-variant of chess that allows for play on infinite possible boards
-
-  Technologies: Ruby, Rails, Javascript, Unity, C\#, MongoDB
+I worked with numerous companies in this period on improving their cloud infrastructure security and reliability, and improving their internal and user-facing technical and policy documentation.
 
 ### Site Reliability Engineer, Domino Data Labs \| June 2018 – September 2018
 
@@ -35,7 +33,7 @@ Technical writer, software engineer, consultant and technologist.
 
   Technologies: Amazon Web Services, Salt, Docker, Kubernetes, Python, Linux, Nginx, Datadog, Newrelic, Pagerduty, Git
 
-### Software Engineer, Pivotal Software \| April 2015 – June 2018
+### Technical Writer and Software Engineer, Pivotal Software \| April 2015 – June 2018
 
 #### Cloud Operations team for Pivotal Web Services
 
