@@ -22,7 +22,7 @@ Technical writer, software engineer, consultant and technologist.
 
   Technologies: GCP, AWS, Heroku, virtual machine and container cloud computing and security, networking and network security, cloud database and storage monitoring and security, operational security and best practices
 
-### Freelance Consultant, Reliability and Security Engineer and Technical Writer \| September 2018 - March 2020
+### Freelance Technical Writer, Consultant, Reliability and Security Engineer \| September 2018 - March 2020
 
 I worked with numerous companies in this period on improving their cloud infrastructure security and reliability, and improving their internal and user-facing technical and policy documentation.
 
