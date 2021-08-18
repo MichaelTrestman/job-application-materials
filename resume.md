@@ -1,6 +1,8 @@
-# Michael Trestman, PhD
+---
+description: 'Technical writer, software engineer, consultant and technologist.'
+---
 
-Technical writer, software engineer, consultant and technologist.
+# Michael Trestman, PhD
 
 [michael.a.trestman@gmail.com](mailto:michael.a.trestman@gmail.com)
 
