@@ -104,8 +104,8 @@ I worked with numerous companies in this period on improving their cloud infrast
 
 * Taught courses in philosophy of science, philosophy of mind, logic and bio-medical ethics
 
-## Education:
+## Education
 
-* Dev Bootcamp 2014
-* UC Davis, PhD, philosophy 2010
+UC Davis, PhD, philosophy 2010  
+Washington University, BA, Psychology and Philosophy 2003
 
