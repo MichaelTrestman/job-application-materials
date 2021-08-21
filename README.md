@@ -6,7 +6,7 @@ description: 'Technical writer, software engineer, consultant and technologist.'
 
 [michael.a.trestman@gmail.com](mailto:michael.a.trestman@gmail.com)
 
-## Work Experience
+
 
 ### Principle Technical Writer and Docs Product Owner, Forte \| March 2020 - Present
 
@@ -104,8 +104,8 @@ I worked with numerous companies in this period on improving their cloud infrast
 
 * Taught courses in philosophy of science, philosophy of mind, logic and bio-medical ethics
 
-## Education
+### Education
 
-UC Davis, PhD, philosophy 2010  
-Washington University, BA, Psychology and Philosophy 2003
+* UC Davis, PhD, philosophy 2010
+* Washington University, BA, Psychology and Philosophy 2003
 
