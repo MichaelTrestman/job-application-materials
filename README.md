@@ -6,7 +6,7 @@ description: 'Technical writer, software engineer, consultant and technologist.'
 
 [michael.a.trestman@gmail.com](mailto:michael.a.trestman@gmail.com)
 
-### Principle Technical Writer and Docs Product Owner, Forte \| March 2020 - Present
+### Principle Technical Writer, Forte \| March 2020 - Present
 
 * Designed, researched, created and maintained all API documentation, tutorials and educational material for the Forte Platform and related products
 * Architected, implemented, maintained and operated docs publication pipeline
@@ -79,6 +79,8 @@ I worked with numerous companies in this period on improving their cloud infrast
 * Adapted documentation for user personas including platform operators, application developers and non-technical business decision makers
 
   Technologies: Markdown, Git, Cloud Foundry, Concourse CI
+
+
 
 ### Postdoctoral Fellow, National Science Foundation \| Jan 2013 - Dec 2014
 
