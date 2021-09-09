@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Curriculum Vitae](README.md)
+* [Michael Trestman PhD](README.md)
 * [Writing Samples](writing-samples/README.md)
   * [Some Cloud Operations Problems and Remediations](writing-samples/untitled.md)
   * [Risk Assessment and Remediation for AWS-managed SecurityAudit IAM Policy](writing-samples/risk-assessment-and-remediation-for-aws-managed-securityaudit-iam-policy.md)

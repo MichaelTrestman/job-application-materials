@@ -1,12 +1,14 @@
-# Curriculum Vitae
+---
+description: 'Writer,  Researcher, Software Engineer, Technologist'
+---
 
-
+# Michael Trestman PhD
 
 [michael.a.trestman@gmail.com](mailto:michael.a.trestman@gmail.com)
 
 ## Work Experience
 
-### Principle Technical Writer and Docs Product Owner, Forte \| March 2020 - Present
+### Principle Technical Writer, Forte \| March 2020 - Present
 
 * Designed, researched, created and maintained all API documentation, tutorials and educational material for the Forte Platform and related products
 * Architected, implemented, maintained and operated docs publication pipeline
