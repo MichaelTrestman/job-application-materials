@@ -97,7 +97,7 @@ I worked with numerous companies in this period on improving their cloud infrast
 
 ### Research Fellow in Philosophy of Science, Tanner Center for the Humanities, University of Utah \| 2010-2011
 
-* Published papers in academic journals 
+* Published papers in academic journals
 * Presented research at academic conferences
 
 ### Graduate Instructor in Philosophy, University of California \| 2006-2010
