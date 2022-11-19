@@ -1,9 +1,6 @@
----
-description: 'Writer,  Researcher, Software Engineer, Technologist'
----
-
 # Michael Trestman PhD
 Writer,  Researcher, Software Engineer, Technologist
+
 [michael.a.trestman@gmail.com](mailto:michael.a.trestman@gmail.com)
 
 ## Work Experience
