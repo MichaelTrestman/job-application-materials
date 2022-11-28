@@ -1,6 +1,10 @@
 # Writing Samples
 
+## Selections from CockroachDB open source documentation:
 
+- [Using HashiCorp Vault's Dynamic Secrets for Enhanced Database Credential Security in CockroachDB](https://www.cockroachlabs.com/docs/v22.1/vault-db-secrets-tutorial.html)
+- [Transport Layer Security (TLS) and Public Key Infrastructure (PKI)](https://www.cockroachlabs.com/docs/stable/security-reference/transport-layer-security.html)
+- [Managing Public Key Infrastructre (PKI) certificates for a CockroachDB deployment with HashiCorp Vault](https://www.cockroachlabs.com/docs/v22.1/manage-certs-vault)
 
 ## [Some Cloud Operations Problems and Remediations](untitled.md)
 
