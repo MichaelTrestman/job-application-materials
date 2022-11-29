@@ -2,6 +2,7 @@
 Writer,  Researcher, Software Engineer, Technologist
 
 [michael.a.trestman@gmail.com](mailto:michael.a.trestman@gmail.com)
+[Writing Samples](https://github.com/MichaelTrestman/job-application-materials/blob/master/writing-samples/writing-samples-overview.md)
 
 ## Work Experience
 
