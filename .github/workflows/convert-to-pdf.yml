@@ -19,8 +19,8 @@ jobs:
         uses: elMuso/MergePDFs-action@1.1
         with:
           path: pdfs
-          filename: CRL-Enterprise-Security-Guidebook
+          filename: Trestman-Job-Application-Materials
       - uses: actions/upload-artifact@v1
         with:
-          name: CRL-Enterprise-Security-Guidebook
-          path: pdfs/CRL-Enterprise-Security-Guidebook.pdf
+          name: Trestman-Job-Application-Materials
+          path: pdfs/Trestman-Job-Application-Materials.pdf
