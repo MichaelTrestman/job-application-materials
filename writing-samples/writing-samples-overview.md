@@ -1,6 +1,6 @@
 # Writing Samples
 
-Michael Trestman, PhD
+Michael Trestman, PhD | [Resume](https://github.com/MichaelTrestman/job-application-materials/blob/master/resume.md)
 
 ## Selections from CockroachDB open source documentation:
 
