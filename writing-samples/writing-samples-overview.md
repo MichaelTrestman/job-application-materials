@@ -23,9 +23,11 @@ This document addresses those questions and recommends ways of fine-tuning the s
 
 [Risk Assessment and Remediation for AWS-managed SecurityAudit IAM Policy](risk-assessment-and-remediation-for-aws-managed-securityaudit-iam-policy.md)
 
-## [Kubes for Noobs: An Introduction to Kubernetes](kubes-for-noobs-an-introduction-to-kubernetes.md)
+## Kubes for Noobs: An Introduction to Kubernetes
 
-This tutorial offers a conceptual introduction to Kubernetes, and then guides the user through a hands-on, beginner-level exercise using Kubernetes and Google Cloud to create a compute cluster and deploy a simple web application.
+This tutorial offers a conceptual introduction to Kubernetes, and then guides the user through a hands-on, beginner-level exercise using Kubernetes and Google Cloud to create a compute cluster and deploy a simple web application:
+
+[Kubes for Noobs: An Introduction to Kubernetes](kubes-for-noobs-an-introduction-to-kubernetes.md)
 
 
 
