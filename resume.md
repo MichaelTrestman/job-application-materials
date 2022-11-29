@@ -111,7 +111,3 @@ I worked with numerous companies in this period on improving their cloud infrast
 
 * Dev Bootcamp 2014
 * UC Davis, PhD, philosophy 2010
-
-## Writing Samples
-
-[Writing Samples](https://github.com/MichaelTrestman/job-application-materials/blob/master/writing-samples/writing-samples-overview.md)
