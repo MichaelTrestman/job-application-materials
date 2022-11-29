@@ -1,5 +1,7 @@
 # Writing Samples
 
+Michael Trestman, PhD
+
 ## Selections from CockroachDB open source documentation:
 
 The following are selections of my work on the CockroachDB open-source documentation:
