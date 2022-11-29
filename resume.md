@@ -11,7 +11,7 @@ Writer,  Researcher, Software Engineer, Technologist
 * Owned design, research, execution and publication of an Enterprise Security Guidebook for prospective customers having signed a non-disclosure agreement NDA; guidebook focuses on the role of the product in architecting for PCI compliance.
 * Participated in cross-team working groups related to security incidents, planned features, threat modeling, and a variety of other topics.
 
-### Principle Technical Writer, Forte \| March 2020 - December 2021
+### Principal Technical Writer, Forte \| March 2020 - December 2021
 
 * Designed, researched, created and maintained all API documentation, tutorials and educational material for the Forte Platform and related products
 * Architected, implemented, maintained and operated docs publication pipeline
