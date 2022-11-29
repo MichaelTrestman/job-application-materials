@@ -7,7 +7,7 @@ Writer,  Researcher, Software Engineer, Technologist
 
 ### Senior Technical Writer\/Cybersecurity Specialist, Cockroach Labs | January 2022 - Present
 
-* Maintained and improved documentation on security-related topics and features for CockroachDB, and open-source distributed SQL database, and Cockroach Cloud, a database as a service (DBAAS) platform based on CockroachDB
+* Maintained and improved documentation on security-related topics and features for CockroachDB, an open-source distributed SQL database, and Cockroach Cloud, a database as a service (DBAAS) platform based on CockroachDB.
 * Owned design, research, execution and publication of an Enterprise Security Guidebook for prospective customers having signed a non-disclosure agreement NDA; guidebook focuses on the role of the product in architecting for PCI compliance.
 * Participated in cross-team working groups related to security incidents, planned features, threat modeling, and a variety of other topics.
 
