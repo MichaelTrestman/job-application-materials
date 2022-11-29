@@ -2,13 +2,15 @@
 
 ## Selections from CockroachDB open source documentation:
 
+The following are selections of my work on the CockroachDB open-source documentation:
+
 - [Guide to Transport Layer Security (TLS) and Public Key Infrastructure (PKI)](https://www.cockroachlabs.com/docs/stable/security-reference/transport-layer-security.html) | [on GitHub](https://github.com/cockroachdb/docs/blob/master/v22.1/security-reference/transport-layer-security.md)
 - [Managing Public Key Infrastructre (PKI) certificates for a CockroachDB deployment with HashiCorp Vault](https://www.cockroachlabs.com/docs/v22.1/manage-certs-vault) | [on GitHub](https://github.com/cockroachdb/docs/blob/master/v22.1/manage-certs-vault.md)
 - [Using HashiCorp Vault's Dynamic Secrets for Enhanced Database Credential Security in CockroachDB](https://www.cockroachlabs.com/docs/v22.1/vault-db-secrets-tutorial.html) | [on GitHub](https://github.com/cockroachdb/docs/blob/master/v22.1/vault-db-secrets-tutorial.md)
 
 ## Some Cloud Operations Problems and Remediations
 
-The follwoing two writing samples are instructions on how to fix common shortcomings for small organizations with cloud-based compute infrastructure. Each problem has remediation instructions for both Amazon Web Service \(AWS\) and Google Cloud Platform \(GCP\).
+The following two writing samples are instructions on how to fix common shortcomings for small organizations with cloud-based compute infrastructure. Each problem has remediation instructions for both Amazon Web Service \(AWS\) and Google Cloud Platform \(GCP\).
 
 [Problem 1: You aren't monitoring load balancer response for server errors](cloud-ops.md#problem-1-you-arent-monitoring-load-balancer-response-for-server-errors)
 
