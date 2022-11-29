@@ -6,14 +6,13 @@
 - [Transport Layer Security (TLS) and Public Key Infrastructure (PKI)](https://www.cockroachlabs.com/docs/stable/security-reference/transport-layer-security.html) | [on GitHub](https://github.com/cockroachdb/docs/blob/master/v22.1/security-reference/transport-layer-security.md)
 - [Managing Public Key Infrastructre (PKI) certificates for a CockroachDB deployment with HashiCorp Vault](https://www.cockroachlabs.com/docs/v22.1/manage-certs-vault) | [on GitHub](https://github.com/cockroachdb/docs/blob/master/v22.1/manage-certs-vault.md)
 
-## [Some Cloud Operations Problems and Remediations](untitled.md)
+## [Some Cloud Operations Problems and Remediations](cloud-ops.md)
 
 The below two writing samples are instructions on how to fix common shortcomings for small organizations with cloud-based compute infrastructure. Each problem has remediation instructions for both Amazon Web Service \(AWS\) and Google Cloud Platform \(GCP\).
 
-[Problem 1: You aren't monitoring load balancer response for server errors](untitled.md#problem-1-you-arent-monitoring-load-balancer-response-for-server-errors)
+[Problem 1: You aren't monitoring load balancer response for server errors](cloud-ops.md#problem-1-you-arent-monitoring-load-balancer-response-for-server-errors)
 
-[Problem 2: You aren't storing application and service credentials and other secrets in a secure way.](untitled.md#problem-2-you-arent-storing-application-and-service-credentials-and-other-secrets-in-a-secure-way)
-
+[Problem 2: You aren't storing application and service credentials and other secrets in a secure way.](cloud-ops.md#problem-2-you-arent-storing-application-and-service-credentials-and-other-secrets-in-a-secure-way)
 
 
 ## [Risk Assessment and Remediation for AWS-managed SecurityAudit IAM Policy](risk-assessment-and-remediation-for-aws-managed-securityaudit-iam-policy.md)
