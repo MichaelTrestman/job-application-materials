@@ -3,7 +3,7 @@
 ## Selections from CockroachDB open source documentation:
 
 - [Using HashiCorp Vault's Dynamic Secrets for Enhanced Database Credential Security in CockroachDB](https://www.cockroachlabs.com/docs/v22.1/vault-db-secrets-tutorial.html) | [on GitHub](https://github.com/cockroachdb/docs/blob/master/v22.1/vault-db-secrets-tutorial.md)
-- [Transport Layer Security (TLS) and Public Key Infrastructure (PKI)](https://www.cockroachlabs.com/docs/stable/security-reference/transport-layer-security.html) | [on GitHub](https://github.com/cockroachdb/docs/blob/master/v22.1/security-reference/transport-layer-security.md)
+- [Guide to Transport Layer Security (TLS) and Public Key Infrastructure (PKI)](https://www.cockroachlabs.com/docs/stable/security-reference/transport-layer-security.html) | [on GitHub](https://github.com/cockroachdb/docs/blob/master/v22.1/security-reference/transport-layer-security.md)
 - [Managing Public Key Infrastructre (PKI) certificates for a CockroachDB deployment with HashiCorp Vault](https://www.cockroachlabs.com/docs/v22.1/manage-certs-vault) | [on GitHub](https://github.com/cockroachdb/docs/blob/master/v22.1/manage-certs-vault.md)
 
 ## [Some Cloud Operations Problems and Remediations](cloud-ops.md)
