@@ -17,7 +17,7 @@ To follow along with this tutorial you will need the following:
 
 - The CockroachDB CLI [installed locally](install-cockroachdb-mac.html).
 - The Vault CLI [installed locally](https://www.vaultproject.io/downloads).
-- Access to a CockroachDB cluster as [`admin` SQL user](security-reference/authorization.html#admin-role). This tutorial will use a CockroachDB {{ site.data.products.serverless }} cluster, but you may either [Create a CockroachDB {{ site.data.products.serverless }} cluster](../cockroachcloud/create-a-serverless-cluster.html) or [Start a Local Cluster (secure)](start-a-local-cluster.html) in order to follow along. In either case you must have the public CA certificate for your cluster, and a username/password combination for the `root` SQL user (or another SQL user with the [`admin` role](security-reference/authorization.html#admin-role).
+- Access to a CockroachDB cluster as [`admin` SQL user](security-reference/authorization.html#admin-role). This tutorial will use a CockroachDB Serverless cluster, but you may either [Create a CockroachDB Serverless cluster](../cockroachcloud/create-a-serverless-cluster.html) or [Start a Local Cluster (secure)](start-a-local-cluster.html) in order to follow along. In either case you must have the public CA certificate for your cluster, and a username/password combination for the `root` SQL user (or another SQL user with the [`admin` role](security-reference/authorization.html#admin-role).
 - Access to a Vault cluster with an admin token. This tutorial will use HashiCorp Cloud Platform, but you may either [spin up a free cluster in HashiCorp Cloud Platform](https://learn.hashicorp.com/collections/vault/cloud) or [start a development cluster locally](https://learn.hashicorp.com/tutorials/vault/getting-started-dev-server).
 
 ## Introduction
@@ -42,15 +42,15 @@ In this phase of the tutorial we will act as an administrator for our organizati
 
 1. Connect to CockroachDB.
 
-    Set your CockroachDB cluster credentials and other configuration information as environment variables. If you're using a CockroachDB {{ site.data.products.cloud }} cluster, you can find this information in the [CockroachDB Cloud Console's cluster page.](https://cockroachlabs.cloud/cluster/)
+    Set your CockroachDB cluster credentials and other configuration information as environment variables. If you're using a CockroachDBCloud cluster, you can find this information in the [CockroachDB Cloud Console's cluster page.](https://cockroachlabs.cloud/cluster/)
 
-    {{site.data.alerts.callout_info}}
+    
     Your cluster name must include the numerical suffix, which is included in the connection string under the **Connect** tab in the console, but is not included when the cluster name is displayed in the console.
-    {{site.data.alerts.end}}
+    
 
     1. Export the variables to your shell:
 
-        {% include_cached copy-clipboard.html %}
+        
         ~~~shell
         export USER_NAME=tutorialadmin # replace with CockroachDB admin username
         export PASSWORD=1234asdf # replace with CockroachDB admin password
@@ -61,11 +61,11 @@ In this phase of the tutorial we will act as an administrator for our organizati
 
     1. Construct a database connection URL for your CockroachDB CLI to connect to the cluster, using your admin credentials:
 
-        {{site.data.alerts.callout_info}}
+        
         You must place the CockroachDB cluster's CA public certificate on the path specified by `sslrootcert`. In the following example, this is a file named `root.crt` in the current directory.
-        {{site.data.alerts.end}}
+        
 
-        {% include_cached copy-clipboard.html %}
+        
         ~~~shell
         export TLS_OPTS="sslrootcert=root.crt&sslmode=verify-full
         export CLI_DB_CONNECTION_URL="postgresql://${USER_NAME}:${PASSWORD}@${HOST}:26257/${DB_NAME}?${TLS_OPTS}"
@@ -86,7 +86,7 @@ In this phase of the tutorial we will act as an administrator for our organizati
 
     Recall that this command must be run in the directory where `root.crt` is located, as specified in the connection URL.
 
-    {% include_cached copy-clipboard.html %}
+    
     ~~~shell
     cockroach sql --url "${CLI_DB_CONNECTION_URL}" --execute "show tables;"
     ~~~
@@ -102,7 +102,7 @@ In this phase of the tutorial we will act as an administrator for our organizati
 
         You can fetch your target URL and generate a token from the [HashiCorp Vault console](https://portal.cloud.HashiCorp.com/services/vault), under the **Access Vault** tab.
 
-        {% include_cached copy-clipboard.html %}
+        
         ~~~shell
         export VAULT_ADDR=https://roach-test-vault.vault.bfb2290a-670b-4a10-bedf-5aab18e84d69.aws.HashiCorp.cloud:8200 # your Vault cluster URL
         export VAULT_NAMESPACE=admin
@@ -110,7 +110,7 @@ In this phase of the tutorial we will act as an administrator for our organizati
 
     1. Authenticate to your Vault, providing the admin token when prompted:
 
-        {% include_cached copy-clipboard.html %}
+        
         ~~~shell
         vault login
         ~~~
@@ -120,11 +120,11 @@ In this phase of the tutorial we will act as an administrator for our organizati
 
 1. Enable the Vault database secrets engine:
 
-    {{site.data.alerts.callout_info}}
+    
     This only needs to be done once for an individual Vault cluster. For more information on using the Vault Secrets CLI, see [Vault's documentation](https://www.vaultproject.io/docs/commands/secrets).
-    {{site.data.alerts.end}}
+    
 
-    {% include_cached copy-clipboard.html %}
+    
     ~~~shell
     vault secrets enable database
     ~~~
@@ -139,7 +139,7 @@ The connection lies in a Vault configuration, which will store your CockroachDB 
 1. Create a Vault database configuration.
 
     1. First, tweak the connection string to skip TLS server authentication, as there's no way to provision the Vault server with the cluster CA cert:
-        {% include_cached copy-clipboard.html %}
+        
         <!-- the "raw" block prevents the double curly braces of Vault's interpolation syntax from being interpreted by Jekyll  -->
         ~~~shell
         {% raw %}export VAULT_TLS_OPTS="sslmode=require"
@@ -147,7 +147,7 @@ The connection lies in a Vault configuration, which will store your CockroachDB 
         ~~~
 
     1. Write the `crdb-config` database configuration to Vault, specifying admin credentials that will be used by Vault to create credentials for your defined role:
-        {% include_cached copy-clipboard.html %}
+        
         ~~~shell
         vault write database/config/crdb-config \
         plugin_name=postgresql-database-plugin \
@@ -170,10 +170,10 @@ For a SQL role, the template is defined by its `creation_statements`, SQL statem
 1. Create a Vault database role.
 
     For example, create a role that has all privileges on the `defaultdb` database:
-    {{site.data.alerts.callout_info}}
+    
     `db_name` is actually not the database name but the Vault database secrets engine namespace (i.e., `crdb-config` in the example).
-    {{site.data.alerts.end}}
-    {% include_cached copy-clipboard.html %}
+    
+    
     ~~~shell
 
     {% raw %}vault write database/roles/crdb-role \
@@ -189,7 +189,7 @@ For a SQL role, the template is defined by its `creation_statements`, SQL statem
 
 1. Query Vault for a list of database roles, revealing the newly created `crdb-role`:
 
-    {% include_cached copy-clipboard.html %}
+    
     ~~~shell
     vault list database/roles/
     ~~~
@@ -201,7 +201,7 @@ For a SQL role, the template is defined by its `creation_statements`, SQL statem
 
 1. Inspect the role, revealing the values we set for the role when creating it:
 
-    {% include_cached copy-clipboard.html %}
+    
     ~~~shell
     vault read database/roles/crdb-role
     ~~~
@@ -226,7 +226,7 @@ For a SQL role, the template is defined by its `creation_statements`, SQL statem
     When we "read" the Vault role called `crdb-role`, we are therefore not fetching credentials for a pre-existing SQL user, but requesting that Vault create a user for us, according to the template.
 
     1. To see this, first execute a SQL statement via the CockroachDB CLI to list existing users:
-        {% include_cached copy-clipboard.html %}
+        
         ~~~shell
         cockroach sql --url $CLI_DB_CONNECTION_URL --execute "show users;"
         ~~~
@@ -240,7 +240,7 @@ For a SQL role, the template is defined by its `creation_statements`, SQL statem
 
     1. Now, let's read some credentials from Vault, which will cause Vault to create SQL users on our CockroachDB cluster.
         Run the following command several times to generate several credential pairs:
-        {% include_cached copy-clipboard.html %}
+        
         ~~~shell
         vault read database/creds/crdb-role
         ~~~
@@ -257,7 +257,7 @@ For a SQL role, the template is defined by its `creation_statements`, SQL statem
         ~~~
 
     1. List the active credentials (or *leases*, in Vault terms) for the Vault role:
-        {% include_cached copy-clipboard.html %}
+        
         ~~~shell
         vault list sys/leases/lookup/database/creds/crdb-role/
         ~~~
@@ -272,7 +272,7 @@ For a SQL role, the template is defined by its `creation_statements`, SQL statem
         ~~~
 
     1. Now fetch the list of currently active SQL roles from the CockroachDB client:
-        {% include_cached copy-clipboard.html %}
+        
         ~~~shell
         cockroach sql --url $CLI_DB_CONNECTION_URL --execute "show users;"
         ~~~
@@ -289,7 +289,7 @@ For a SQL role, the template is defined by its `creation_statements`, SQL statem
 
 1. Revoke credentials.
     Try revoking a lease. Recall that a *lease* on a *role* in Vault terms corresponds to an actual credential pair on the CockroachDB cluster, i.e., a username/password combination for a SQL user.
-    {% include_cached copy-clipboard.html %}
+    
     ~~~shell
     vault lease revoke database/creds/crdb-role/XIpIBRM8FkQxD5B0ndB1lszY.iMXtW
     ~~~
@@ -307,7 +307,7 @@ For a SQL role, the template is defined by its `creation_statements`, SQL statem
 
     Vault policies are specified using [HashiCorp Configuration Language (HCL)]( https://github.com/hashicorp/hcl/blob/main/hclsyntax/spec.md). The following configuration specifies a policy of read access for the `crdb-role` credential:
 
-    {% include_cached copy-clipboard.html %}
+    
     ~~~shell
     vault policy write roach-client - <<hcl
     path "database/creds/crdb-role" {
@@ -323,7 +323,7 @@ For a SQL role, the template is defined by its `creation_statements`, SQL statem
 
     Our final act as Vault admin will be to provision an authentication token to assume the `crdb-role`: the Vault role with the sole purpose of providing credentials to a CockroachDB client.
 
-    {% include_cached copy-clipboard.html %}
+    
     ~~~shell
      vault token create -policy=roach-client
     ~~~
@@ -352,7 +352,7 @@ In this phase of the tutorial, we will use credentials provisioned by Vault to a
 1. Authenticate to Vault as the CockroachDB user.
 
     Use the client token to authenticate to Vault with limited permissions:
-    {% include_cached copy-clipboard.html %}
+    
     ~~~shell
     vault login $VAULT_CLIENT_TOKEN
     ~~~
@@ -366,7 +366,7 @@ In this phase of the tutorial, we will use credentials provisioned by Vault to a
 
     To confirm that you have assumed a role with limited permissions, try listing the current leases on the `crdb-role`, as we did [previously](#). You should see a permissions error.
 
-    {% include_cached copy-clipboard.html %}
+    
     ~~~shell
     vault list sys/leases/lookup/database/creds/crdb-role/
     ~~~
@@ -385,7 +385,7 @@ In this phase of the tutorial, we will use credentials provisioned by Vault to a
 
     The only thing this policy does have permission to do is pull credentials for the CockroachDB cluster. Let's do that:
 
-    {% include_cached copy-clipboard.html %}
+    
     ~~~shell
     vault read database/creds/crdb-role
     ~~~
@@ -402,7 +402,7 @@ In this phase of the tutorial, we will use credentials provisioned by Vault to a
 1. Connect to the CockroachDB cluster with your Vault-generated dynamic secret credentials.
 
     1. Using the previous output, add the `crdb-role` credentials to your environment:
-        {% include_cached copy-clipboard.html %}
+        
         ~~~shell
         export USER_NAME=v-token-crdb-rol-thfLPlFwex0k9Op0P8qA-1653528652 # generated CockroachDB client username
         export PASSWORD=FlOo0p7jMTXjT27hlZZ-H # generated CockroachDB client password
@@ -414,7 +414,7 @@ In this phase of the tutorial, we will use credentials provisioned by Vault to a
         ~~~
 
     1. List all the tables in database `defaultdb` to confirm you can connect to your CockroachDB cluster:
-        {% include_cached copy-clipboard.html %}
+        
         ~~~shell
         cockroach sql --url "${CLI_DB_CONNECTION_URL}" --execute "show tables;"
         ~~~
@@ -426,7 +426,7 @@ In this phase of the tutorial, we will use credentials provisioned by Vault to a
         ~~~
 
     1. To confirm that the credentials have been properly limited, attempt a forbidden operation. `crdb-role`  does not have permission to list users, so try that in order to generate a permissions error:
-        {% include_cached copy-clipboard.html %}
+        
         ~~~shell
         cockroach sql --url "${CLI_DB_CONNECTION_URL}" --execute "show users;"
         ~~~

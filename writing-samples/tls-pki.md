@@ -72,10 +72,6 @@ The TLS protocol employs both asymmetric and symmetric encryption:
 
 Since a session key is created with information shared using asymmetric encryption, and is used only for the duration of a session, TLS combines the best of both asymmetric encryption (the ability to establish an encrypted communication channel without having to have first securely shared a key) and symmetric encryption (computational efficiency).
 
-{{site.data.alerts.callout_info}}
-The generation and management of TLS session keys is fully automated within the TLS protocol. You do not ever need to provision or manage TLS session keys.
-{{site.data.alerts.end}}
-
 ## What is Public Key Infrastructure (PKI)?
 
 Encryption is powerful and important, but without identity authentication, it's not very useful: if you don't know who is sending you messages in the first place, it's less useful to know that nobody *else* is tampering with the contents or eavesdropping on the conversation.
@@ -152,9 +148,9 @@ If the client is to use mutual authentication the client must have a private key
 
 TLS encryption and server authentication are supported in all communication between CockroachDB nodes, and from clients to nodes.
 
-Currently, mutual TLS authentication, in which the client as well as the server uses a private key/public certificate pair to authenticate itself, is not supported in CockroachDB {{ site.data.products.cloud }}. Clients must use username/password combinations.
+Currently, mutual TLS authentication, in which the client as well as the server uses a private key/public certificate pair to authenticate itself, is not supported in CockroachDB Cloud. Clients must use username/password combinations.
 
-CockroachDB {{ site.data.products.core }} does supports TLS authentication for clients.
+CockroachDB  does supports TLS authentication for clients.
 
 ### Default mode 
 
@@ -167,9 +163,6 @@ If the connection is mutually TLS-authenticated (i.e., if the client authenticat
 
 ### `--accept-sql-without-tls` mode
 
-{{site.data.alerts.callout_info}}
-{% include feature-phases/preview.md %}
-{{site.data.alerts.end}}
 
 CockroachDB clusters can be started with this option in order to allow clients to opt out of TLS server authentication.
 
@@ -198,11 +191,11 @@ Connections between CockroachDB nodes are always mutually TLS-authenticated. Eac
 
 ### CockroachDB Cloud
 
-Customers using CockroachDB {{ site.data.products.cloud }} need not worry about managing TLS keys for CockroachDB nodes, as cluster management is delegated to the Cockroach Labs team.
+Customers using CockroachDB Cloud need not worry about managing TLS keys for CockroachDB nodes, as cluster management is delegated to the Cockroach Labs team.
 
 ### CockroachDB Self-Hosted
 
-{{site.data.alerts.callout_info}}
+
 Customers who deploy and manage their own CockroachDB clusters must provision and manage certificates on each node, implementing their own PKI security. This entails ensuring that credentials are carefully controlled, monitoring for signs of compromise, and mitigating the impact of potential credential leaks. Authorization for issuing credentials is particularly critical, and this includes issuing private key/public certificate pairs for CockroachDB nodes or clients. Unmitigated compromise of either of these can have devastating business impact.
 
 Choosing a strategy for maintaining solid private PKI is important and complex, and depends on your total system requirements, total security threat model, and available resources.
@@ -210,7 +203,7 @@ Choosing a strategy for maintaining solid private PKI is important and complex, 
 - Learn about [Manage PKI certificates for a CockroachDB deployment with HashiCorp Vault](../manage-certs-vault.html).
 - Review our [breakdown of security features by offering](security-overview.html).
 - Contact our <a href="mailto:sales@cockroachlabs.com">sales team</a> to discuss your needs and the range of solutions offered by Cockroach Labs.
-{{site.data.alerts.end}}
+
 
 By default, a CockroachDB node makes double use of a single key pair, using it to authenticate both as client when initiating a connection to another node, and as server when recieving requests.
 
@@ -224,13 +217,13 @@ In turn, which authentication methods are available depends on the sort of envir
 
 ### CockroachDB Cloud
 
-CockroachDB {{ site.data.products.cloud }} does not support certificate-authenticated client requests. TLS is used to authenticate the server and encrypt all traffic, but the user must authenticate to the database with a username/password combination.
+CockroachDB Cloud does not support certificate-authenticated client requests. TLS is used to authenticate the server and encrypt all traffic, but the user must authenticate to the database with a username/password combination.
 
 Because the server must still be TLS-authenticated, the client must know to trust the certificate authority that signed the public certificate identifying the server. The path to the CA's public certificate is passed as the `sslrootcert` parameter in a [database connecton string](../connect-to-the-database.html), or by being placed in the directory specified by the `certs-dir` argument in a connection made with the [`cockroach sql`](../cockroach-sql.html) CLI command.
 
 ### Self-Hosted CockroachDB
 
-{{site.data.alerts.callout_info}}
+
 Customers who deploy and manage their own CockroachDB clusters must provision and manage certificates on each node, implementing their own PKI security. This entails that you must ensure credentials are carefully controlled, monitoring for signs of compromise and mitigating the impact of potential credential leaks. Authorization for issuing credentials is particularly critical, and this includes issuing private key/public certificate pairs for CockroachDB nodes or clients. Unmitigated compromise of either of these can have devastating business impact.
 
 Choosing a strategy for maintaining solid private PKI is important and complex, and depends on your total system requirements, total security threat model, and available resources.
@@ -238,9 +231,9 @@ Choosing a strategy for maintaining solid private PKI is important and complex, 
 - Learn more: [Manage PKI certificates for a CockroachDB deployment with HashiCorp Vault](../manage-certs-vault.html).
 - Review our [breakdown of security features by offering](security-overview.html).
 - Contact our <a href="mailto:sales@cockroachlabs.com">sales team</a> to discuss your needs and the range of solutions offered by Cockroach Labs.
-{{site.data.alerts.end}}
 
-CockroachDB {{ site.data.products.core }} clusters support TLS authentication for clients, i.e. mutual TLS authentication. Other supported authentication methods are username/password combination, and GSSAPI/Kerberos (Enterprise only).
+
+CockroachDB  clusters support TLS authentication for clients, i.e. mutual TLS authentication. Other supported authentication methods are username/password combination, and GSSAPI/Kerberos (Enterprise only).
 
 #### Non-TLS client authentication
 
@@ -261,9 +254,9 @@ These key files are used with the CockroachDB CLI by placing them in a directory
 
 ### CockroachDB Cloud
 
-Customers of CockroachDB {{ site.data.products.cloud }} delegate responsibility for maintaining cluster internal PKI to the Cockroach Labs team, and need not worry about securing authentication and encryption between cluster nodes.
+Customers of CockroachDB Cloud delegate responsibility for maintaining cluster internal PKI to the Cockroach Labs team, and need not worry about securing authentication and encryption between cluster nodes.
 
-CockroachDB {{ site.data.products.cloud }} clusters do not support certificate based client authentication, but rely instead on username/password combination.
+CockroachDB Cloud clusters do not support certificate based client authentication, but rely instead on username/password combination.
 
 ### CockroachDB Self-Hosted 
 
