@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "writing-samples/manage-certs-vault.md",
+                "file": "resume.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "writing-samples/manage-certs-vault.md",
+                "file": "resume.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "writing-samples/manage-certs-vault.md",
+                "file": "resume.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "writing-samples/manage-certs-vault.md"
+                "file": "resume.md"
               }
             }
           }
@@ -150,14 +150,14 @@
   "lastOpenFiles": [
     "writing-samples/manage-certs-vault.md",
     "writing-samples/vault-db-secrets.md",
-    "writing-samples/tls-pki.md",
     "resume.md",
-    "writing_samples.md",
     "writing-samples/writing-samples-overview.md",
-    "writing-samples/risk-assessment-and-remediation-for-aws-managed-securityaudit-iam-policy.md",
-    "writing-samples/kubes-for-noobs-an-introduction-to-kubernetes.md",
-    "writing-samples/cloud-ops.md",
+    "writing-samples/tls-pki.md",
     "writing-samples/aws-managed-securityaudit-iam-policy-risk-assessment-and-remediation.md",
+    "writing-samples/kubes-for-noobs-an-introduction-to-kubernetes.md",
+    "writing-samples/risk-assessment-and-remediation-for-aws-managed-securityaudit-iam-policy.md",
+    "writing_samples.md",
+    "writing-samples/cloud-ops.md",
     "writing-samples",
     "writing_samples/kubes-for-noobs-an-introduction-to-kubernetes.md",
     "writing_samples/cloud-operations-problems-and-remediations.md",

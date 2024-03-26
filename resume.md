@@ -1,6 +1,7 @@
 # Resume | Michael Trestman, PhD
 michael.a.trestman@gmail.com | [Writing Samples](https://github.com/MichaelTrestman/job-application-materials/blob/master/writing-samples/writing-samples-overview.md)
-### Cockroach Labs | Jan 2022 - Oct 2023
+n### Cockroach Labs | Jan 2022 - Oct 2023
+
 #### Senior Technical Writer/Cybersecurity Specialist
 - Contributed to CockroachDB and CockroachDB Cloud Platform documentation and educational materials.
 - Owned security-related topics and features including: public key infrastructure (PKI), identity and access management (IAM), single sign-on (SSO) with OpenID Connect (OIDC), encryption, and network security.

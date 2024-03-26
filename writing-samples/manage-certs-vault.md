@@ -1,4 +1,3 @@
-# Manage PKI certificates for a CockroachDB deployment with HashiCorp Vault
 
 This tutorial guides the user through implementing [public key infrastructure (PKI)]({% link {{ page.version.version }}/security-reference/transport-layer-security.md %}) for a CockroachDB cluster deployed in Google Cloud Platform (GCP), using [Vault PKI Secrets Engine]({% link {{ page.version.version }}/hashicorp-integration.md %}) .
 
@@ -565,14 +564,14 @@ Download the CockroachDB executable from `binaries.cockroachdb.com`.
 
 ```shell
 function install_roach_on_node {
-    gcloud compute ssh $1 --command 'if [[ ! -e cockroach-{{ page.release_info.version }}.linux-amd64 ]];
+    gcloud compute ssh $1 --command 'if [[ ! -e cockroach-23.1.linux-amd64 ]];
     then
         echo "roach not installed; installing roach"
-        sudo curl https://binaries.cockroachdb.com/cockroach-{{ page.release_info.version }}.linux-amd64.tgz | tar -xz
-        sudo cp -i cockroach-{{ page.release_info.version }}.linux-amd64/cockroach /usr/local/bin/
+        sudo curl https://binaries.cockroachdb.com/cockroach-23.1.linux-amd64.tgz | tar -xz
+        sudo cp -i cockroach-23.1.linux-amd64/cockroach /usr/local/bin/
         sudo mkdir -p /usr/local/lib/cockroach
-        sudo cp -i cockroach-{{ page.release_info.version }}.linux-amd64/lib/libgeos.so /usr/local/lib/cockroach/
-        sudo cp -i cockroach-{{ page.release_info.version }}.linux-amd64/lib/libgeos_c.so /usr/local/lib/cockroach/
+        sudo cp -i cockroach-23.1.linux-amd64/lib/libgeos.so /usr/local/lib/cockroach/
+        sudo cp -i cockroach-23.1.linux-amd64/lib/libgeos_c.so /usr/local/lib/cockroach/
     else
         echo "roach already installed"
     fi'
